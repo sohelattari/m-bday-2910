@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Muskan 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#ffe3ec;--bg2:#ffc2d6;--ink:#5a1a36;--card:#fff;--accent:#e63e79;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#2a0f1e;--bg2:#4a1631;--ink:#ffe3ec;--card:#3b1427;--accent:#ff6b9d}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(160deg,var(--bg1),var(--bg2));color:var(--ink);font-family:Poppins,system-ui,sans-serif;text-align:center;overflow-x:hidden}
+.script{font-family:'Dancing Script',cursive,serif}
+section{max-width:480px;margin:0 auto;padding:36px 22px;position:relative;z-index:1}
+h1{font-size:2.5rem;margin:.2em 0}h2{font-size:1.8rem;margin:.2em 0 .6em}
+button{font:inherit;border:0;border-radius:999px;padding:14px 28px;background:var(--accent);color:#fff;font-size:1.05rem;cursor:pointer;box-shadow:0 6px 18px rgba(230,62,121,.35)}
+button:active{transform:scale(.96)}
+.hide{display:none!important}
+.envelope{font-size:5rem;animation:bob 2s ease-in-out infinite;cursor:pointer;display:inline-block}
+@keyframes bob{50%{transform:translateY(-10px) scale(1.06)}}
+.letter{background:var(--card);border-radius:18px;padding:26px 22px;line-height:1.85;box-shadow:0 10px 30px rgba(0,0,0,.12);text-align:left;animation:pop .8s both}
+@keyframes pop{from{opacity:0;transform:translateY(20px) scale(.95)}to{opacity:1;transform:none}}
+.letter p{opacity:0;animation:pop .8s forwards}
+.letter p:nth-child(2){animation-delay:.6s}.letter p:nth-child(3){animation-delay:1.4s}.letter p:nth-child(4){animation-delay:2.2s}.letter p:nth-child(5){animation-delay:3s}
+.gal{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px}
+.ph{flex:0 0 78%;scroll-snap-align:center;background:var(--card);padding:10px 10px 30px;border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.18);transform:rotate(-2deg)}
+.ph:nth-child(even){transform:rotate(2deg)}
+.ph img,.ph .empty{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px;display:flex;align-items:center;justify-content:center;background:var(--bg2);font-size:.85rem;padding:12px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.flip{perspective:600px;height:190px;cursor:pointer}
+.in{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.flip.on .in{transform:rotateY(180deg)}
+.f,.b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:16px;padding:10px;backface-visibility:hidden;font-size:.88rem;line-height:1.4}
+.f{background:var(--accent);color:#fff;font-size:2rem}
+.b{background:var(--card);transform:rotateY(180deg);box-shadow:0 6px 16px rgba(0,0,0,.12)}
+.heart{position:fixed;bottom:-30px;pointer-events:none;animation:up linear forwards;z-index:0}
+@keyframes up{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+#no{position:relative;background:#9a8a92;box-shadow:none;margin-left:10px;transition:transform .25s}
+#yes{transition:transform .25s}
+#mus{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 12px);z-index:5;padding:10px 14px;font-size:1.2rem}
+</style>
+</head>
+<body>
+<button id="mus" class="hide">🎵</button>
+<audio id="aud" loop preload="auto"></audio>
+
+<section id="s1">
+  <div style="font-size:3rem">🎂</div>
+  <h1 class="script">Happy Birthday,<br>Muskan!</h1>
+  <p>Meri jaan, this is for you 💕🤗<br>Envelope ko touch karo 💌</p>
+  <div class="envelope" id="env">💌</div>
+</section>
+
+<section id="s2" class="hide">
+  <h2 class="script">Dil se, aapke liye</h2>
+  <div class="letter">
+    <p>Finally… 29 Oct aa hi gaya! 🎉 Mere favourite person ka birthday! 🥳🤗<br>Happyyy Birthdayyy meri meow meow 🐱, meri humsafar 💍, meri jaan, sweetheart! 🎂💕😘🤗</p>
+    <p>Allah paak aapko nekiyon wali tawil zindagi ata farmaye 🤲 Aapki life khushiyon se bhari ho 🌈 Aap kabhi gham ke badal na dekho, aur hamesha phoolon ki tarah muskurate raho 🌸😊🤗</p>
+    <p>Aur haan… hamesha hamesha mere saath raho 🥺🤗 Aapka haath mere haath mein rahe 🤝💞 Aap mere rahein, aur main aapka. Aameen 🤲✨😘💋</p>
+    <p class="script" style="font-size:1.6rem;text-align:right;margin-bottom:0">Hamesha aapka 🌹</p>
+  </div>
+  <p style="margin-top:26px"><button id="b2">Aage chalo 💗</button></p>
+</section>
+
+<section id="s3" class="hide">
+  <h2 class="script">Hamari yaadein 📸</h2>
+  <p style="font-size:.9rem;opacity:.8">Swipe karo →</p>
+  <div class="gal" id="gal"></div>
+  <p><button id="b3">Aur kuch hai… 🎀</button></p>
+</section>
+
+<section id="s4" class="hide">
+  <h2 class="script">Aapko kyun chahta hoon</h2>
+  <p style="font-size:.9rem;opacity:.8">Har dil pe tap karo 👆💗</p>
+  <div class="grid" id="grid"></div>
+  <p style="margin-top:26px"><button id="b4">Ek aakhri baat… 🧸</button></p>
+</section>
+
+<section id="s5" class="hide">
+  <div style="font-size:3.5rem">🧸</div>
+  <h1 class="script" id="q">Hamesha mere saath rahogi na, meri jaan?</h1>
+  <p id="btns"><button id="yes">Haan! 💖</button><button id="no">Nahi 🙈</button></p>
+  <p id="win" class="hide script" style="font-size:2rem">Shukriya mujhe choose karne ke liye, my love! 🥹💞<br><span style="font-size:1.05rem;font-family:Poppins,sans-serif">I will not let you down 🤝💖<br>I loveee youuuu sooo muchhh 😘 ummmah ummmah 💋💋<br>And once again, Happpyyy wala birthdayyy! 🎂🎉🥳</span></p>
+</section>
+
+<script>
+/* ==== EDIT HERE: song and photos (data URIs get embedded by me) ==== */
+var AUDIO_SRC="song.mp3";
+var PHOTOS=["photos/1.jpg", "photos/2.jpg", "photos/3.jpg", "photos/4.jpg", "photos/5.jpg", "photos/6.jpg", "photos/7.jpg", "photos/8.jpg", "photos/9.jpg", "photos/10.jpg"];
+var CAPTIONS=["Hum dono aur ek duniya", "Aapke haath mein mera haath, jaise koi khwaab", "Please mera haath thaame rakhna, is bheed mein", "Mere liye bas aap hi kaafi ho", "Hayee meri pyari si jaan", "MashaAllah, mere phool ko nazar na lage", "Noor hi noor", "Meri Qalbi habibi", "Sukoon ke pal", "Mehendi se bhi haseen aapke haath"];
+/* ==================================================================== */
+var $=function(i){return document.getElementById(i)};
+var aud=$('aud'),mus=$('mus');
+if(AUDIO_SRC){aud.src=AUDIO_SRC;mus.classList.remove('hide');mus.onclick=function(){if(aud.paused){aud.play();mus.textContent='🎵'}else{aud.pause();mus.textContent='🔇'}}}
+function go(a,b){$(a).classList.add('hide');$(b).classList.remove('hide');window.scrollTo(0,0);burst()}
+function heart(){var h=document.createElement('div');h.className='heart';h.textContent=['💗','💖','💕','🌸','✨'][Math.floor(Math.random()*5)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(14+Math.random()*22)+'px';h.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(h);setTimeout(function(){h.remove()},10000)}
+function burst(){for(var i=0;i<18;i++)setTimeout(heart,i*80)}
+setInterval(heart,900);
+var n=PHOTOS.length||4;
+for(var i=0;i<n;i++){var d=document.createElement('div');d.className='ph';d.innerHTML=(PHOTOS[i]?'<img src="'+PHOTOS[i]+'" alt="">':'<div class="empty">Yahan aapki photo aayegi 💕</div>')+'<div class="script" style="margin-top:8px;font-size:1.2rem">'+(CAPTIONS[i]||'')+'</div>';$('gal').appendChild(d)}
+var R=["Aap mujhe bahut pasand ho 😍","Aap ho toh zindagi mein rang hain, warna sab feeka feeka hai 🌈","Aapse baat na ho toh sab khali khali lagta hai 🥺","Aapne mere dil pe qabza kar liya, itne achhe ho aap 💘","Shaam ko office se aata hoon toh aapka poochna “main kaisa hoon?” meri saari thakan door kar deta hai 🥹☕","That’s why I loveeee youuuu, my sweetheart! 😘💖"];
+R.forEach(function(r){var d=document.createElement('div');d.className='flip';d.innerHTML='<div class="in"><div class="f">💗</div><div class="b">'+r+'</div></div>';d.onclick=function(){d.classList.toggle('on')};$('grid').appendChild(d)});
+$('env').onclick=function(){if(AUDIO_SRC)aud.play().catch(function(){});go('s1','s2')};
+$('b2').onclick=function(){go('s2','s3')};
+$('b3').onclick=function(){go('s3','s4')};
+$('b4').onclick=function(){go('s4','s5')};
+$('yes').onclick=function(){$('win').classList.remove('hide');$('q').classList.add('hide');$('btns').classList.add('hide');for(var i=0;i<5;i++)setTimeout(burst,i*500)};
+var c=0;$('no').onclick=function(){c++;$('no').style.transform='translate('+(Math.random()*120-60)+'px,'+(Math.random()*60-30)+'px) scale('+Math.max(.4,1-c*.15)+')';$('yes').style.transform='scale('+(1+c*.15)+')'};
+</script>
+</body>
+</html>
